@@ -1,0 +1,57 @@
+html {
+  font-size: 15px;
+  background-color: black;
+  font-family: georgia;
+}
+
+body {
+  width: 800px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 150px 100px 150px 100px;  /*T-R-B-L*/
+}
+
+.box_h {
+  border: 3px solid #05381B;
+}
+
+h1 {
+  font-size: 60px;
+  text-align: center; 
+  color: black;
+}
+
+h2{
+  font-size: 30px;
+  text-align: center;
+  color: black;  
+  line-height: 1.5;
+  letter-spacing: 1.2px;
+}
+
+h3{
+  font-size: 25px;
+  text-align: left;
+  color: black;  
+  line-height: 1.5;
+  letter-spacing: 0.8px;
+}
+
+p{
+  font-size: 20px;
+  color: black;  
+  line-height: 2;
+  letter-spacing: 1px;
+}
+
+li{
+  font-size: 20px;
+  color: black;  
+  line-height: 2;
+  letter-spacing: 1px;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+}
