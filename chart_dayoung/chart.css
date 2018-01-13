@@ -35,7 +35,35 @@ body {
 #mexico-fdi .focus circle {
   fill: red;
   stroke: red;
+}
 
+#mexico-gdp .axis path,
+#mexico-gdp .axis line {
+  fill: none;
+  stroke: black;
+  shape-rendering: crispEdges;
+}
+
+#mexico-gdp .x.axis path {
+  display: none;
+  strok: black;
+  width: 20px;
+}
+
+#mexico-gdp .line {
+  fill: none;
+  stroke: blue;
+  stroke-width: 2px;
+}
+
+#mexico-gdp .overlay {
+  fill: none;
+  pointer-events: all;
+}
+
+#mexico-gdp .focus circle {
+  fill: blue;
+  stroke: blue;
 }
 
 .axis path,

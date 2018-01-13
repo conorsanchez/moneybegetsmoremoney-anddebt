@@ -1,4 +1,4 @@
-var margin = {top: 20, right: 50, bottom: 30, left: 50},
+var margin = {top: 20, right: 50, bottom: 30, left: 80},
     width = 800 - margin.left - margin.right,
     height = 500 - margin.top - margin.bottom;
 
@@ -23,23 +23,23 @@ var yAxis = d3.svg.axis()
 
 var line = d3.svg.line()
     .x(function(d) { return x(d.date); })
-    .y(function(d) { return y(d.fdi); });
+    .y(function(d) { return y(d.gdp); });
 
-var svg = d3.select("#mexico-fdi-graph").append("svg")
+var svg = d3.select("#mexico-gdp-graph").append("svg")
     .attr("width", width + margin.left + margin.right)
     .attr("height", height + margin.top + margin.bottom)
-    .attr("id", "mexico-fdi")
+    .attr("id", "mexico-gdp")
     .attr("class","chart")
 
   .append("g")
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-d3.tsv("chart_dayoung/data.tsv", function(error, data) {
+d3.tsv("chart_dayoung/GDPdata.tsv", function(error, data) {
   if (error) throw error;
 
   data.forEach(function(d) {
     d.date = parseDate(d.date);
-    d.fdi = +d.fdi;
+    d.gdp = +d.gdp;
   });
 
   data.sort(function(a, b) {
@@ -47,7 +47,7 @@ d3.tsv("chart_dayoung/data.tsv", function(error, data) {
   });
 
   x.domain([data[0].date, data[data.length - 1].date]);
-  y.domain(d3.extent(data, function(d) { return d.fdi; }));
+  y.domain(d3.extent(data, function(d) { return d.gdp; }));
 
   svg.append("g")
       .attr("class", "x axis")
@@ -62,7 +62,7 @@ d3.tsv("chart_dayoung/data.tsv", function(error, data) {
       .attr("y", 6)
       .attr("dy", ".71em")
       .style("text-anchor", "end")
-      .text("FDI (Billion USD)");
+      .text("GDP (USD, Billions)");
 
   svg.append("path")
       .datum(data)
@@ -94,7 +94,7 @@ d3.tsv("chart_dayoung/data.tsv", function(error, data) {
         d0 = data[i - 1],
         d1 = data[i],
         d = x0 - d0.date > d1.date - x0 ? d1 : d0;
-    focus.attr("transform", "translate(" + x(d.date) + "," + y(d.fdi) + ")");
-    focus.select("text").text(formatCurrency(d.fdi));
+    focus.attr("transform", "translate(" + x(d.date) + "," + y(d.gdp) + ")");
+    focus.select("text").text(formatCurrency(d.gdp));
   }
 });
