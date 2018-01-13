@@ -2,6 +2,8 @@
 <html>
 	<link href="styles/main.css" rel="stylesheet" type="text/css">
 	<link href="styles/chart.css" rel="stylesheet" type="text/css">
+	<link href="styles/dawei.css" rel="stylesheet" type="text/css">
+
 <body>
 
 <h1>Money Begets Money?</h1>
@@ -12,17 +14,29 @@
 
 
 <h4 style="display:inline">Q1.</h4><h3 style="display:inline">Does money follow laws of fluid dynamics?</h3>  
-	<p> First, below is the capital inflows to different countries at a glance.</p>
-		<div class="box_img"><img src="/images/sample_image1.svg"></div>
-	<p> Write a narrative of the chart above but try to be concise by utilizing bullet points for list of ideas: </p>
+	<h3> World Map of FDI Inflow (2016)</h3>
+	<p>The map show the FDI inward flow in 2016 (in million US dollar)</p> 
+
+		<div id="tooltip-container"></div>
+
+		<div id="canvas-svg"></div>
+
+	<h3>The Chart for FDI Inflow by Country Groups</h3>
+	
+		<div class="box_img"><img src="/chart_dawei/FDI_Inflows_by_Country_Groups.png"></div>
+	
+	<p>Data source: UNCTAD http://unctadstat.unctad.org/wds/ReportFolders/reportFolders.aspx?sCS_ChosenLang=en </p>
+	<p>Map citing the sample D3 code https://gist.github.com/dnprock/bb5a48a004949c7c8c60</p>
+
+	<p> The map and the chart clearly show that richer economies attract more FDI than poorer economies.</p>
 		<ul>
-			<li>add first bullet point here, if it is long try to break it down even further so that it doesn't look clustered</li>
+			<li> Advanced economies account for the majority of global FDI Inflow (59%).</li>
 				<div class="blankline_small"><br></br></div>
-			<li>add second bullet point here</li>
+			<li> The FDI inflow to developing economies actually decreased comparing with the previous year. </li>
 		</ul>
-	<p> Wrap around the subsection with a nice concluding sentence. </p>
-	<div class="box_c"><h6><em>Summarize findings from the chart above</em></h6></div>
-	<p> End the subsection with a leadning sentence to the next subsection.</p>
+	
+	<div class="box_c"><h6><em>Developing countries face challenges in attracting FDI.</em></h6></div>
+	
 <div class="blankline_large"><br></br></div>
 
 
@@ -67,5 +81,9 @@
 Sources: <a href src="http://www.imf.org/external/datamapper/datasets">  IMF DataMapper </a></p>
 <p> <a href src="http://unctadstat.unctad.org/wds/ReportFolders/reportFolders.aspx?sCS_ChosenLang=en"> UNCTADSTAT</a></p>	
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/topojson/1.1.0/topojson.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="scripts/dawei.js"></script>
 </body>
 </html>
