@@ -1,0 +1,69 @@
+
+{
+ "name": "flare",
+ "children": [
+  {
+   "name": "analytics",
+   "children": [
+    {
+     "name": "cluster",
+     "children": [
+      {"name": "Real Estate", "size": 675.4}
+     ]
+    },
+    {
+     "name": "graph",
+     "children": [
+      {"name": "Agriculture & Fishing", "size": 33.7}
+     ]
+    },
+    {
+     "name": "optimization",
+     "children": [
+      {"name": "Hotel & Restaurants", "size": 713.4}
+     ]
+    }
+   ]
+  },
+  {
+   "name": "animate",
+   "children": [
+    {"name": "Mining & Quarrying", "size": 832.6},
+    {"name": "Manufacturing", "size": 9784.3},
+    {
+     "name": "interpolate",
+     "children": [
+      {"name": "Transport, Storage, & Communications", "size": 766.8}
+     ]
+    },
+    {"name": "Construction", "size": 2103.1}
+   ]
+  },
+  {
+   "name": "data",
+   "children": [
+    {
+     "name": "converters",
+     "children": [
+      {"name": "Trade & Repairs", "size": 3043.8}
+     ]
+    },
+    {"name": "Financial Services", "size": 2663.9}
+   ]
+  },
+  {
+   "name": "display",
+   "children": [
+    {"name": "Total Services", "size": 9651.6}
+   ]
+  },
+  {
+   "name": "flex",
+   "children": [
+    {"name": "Other", "size": 2180.4}
+   ]
+  }
+ ]
+}
+
+ 
