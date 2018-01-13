@@ -1,0 +1,66 @@
+body {
+  font: 10px sans-serif;
+}
+
+.chart {
+  font: 15px sans-serif;
+  /*max-width: 1000px;*/
+  text-align: center;
+}
+
+#mexico-fdi .axis path,
+#mexico-fdi .axis line {
+  fill: none;
+  stroke: black;
+  shape-rendering: crispEdges;
+}
+
+#mexico-fdi .x.axis path {
+  display: none;
+  strok: black;
+  width: 20px;
+}
+
+#mexico-fdi .line {
+  fill: none;
+  stroke: red;
+  stroke-width: 2px;
+}
+
+#mexico-fdi .overlay {
+  fill: none;
+  pointer-events: all;
+}
+
+#mexico-fdi .focus circle {
+  fill: red;
+  stroke: red;
+
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.x.axis path {
+  display: none;
+}
+
+.line {
+  fill: none;
+  stroke: red;
+  stroke-width: 1.5px;
+}
+
+.overlay {
+  fill: none;
+  pointer-events: all;
+}
+
+.focus circle {
+  fill: none;
+  stroke: steelblue;
+}
