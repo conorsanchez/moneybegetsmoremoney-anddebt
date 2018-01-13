@@ -2,11 +2,11 @@ ECONOMY,FDI Inflow
 Serbia and Montenegro,0.001
 Tonga,0.2849907059
 Sao Tome and Principe,0.32
-Sudan (...2011),0.4
+Sudan,0.4
 Comoros,0.51
 Kiribati,0.5384001377
 Sierra Leone,0.663928
-"Korea, Dem. People's Rep. of",0.665
+North Korea,0.665
 Afghanistan,0.69
 Guinea-Bissau,1.03
 Samoa,1.16
@@ -45,12 +45,12 @@ Saint Lucia,18.4148148148
 Suriname,19.1
 Nepal,19.16
 Antigua and Barbuda,19.3518518519
-Iran (Islamic Republic of),20.49
+Iran,20.49
 Swaziland,21.7242141254
 Ethiopia,21.93
 Republic of Moldova,23.74
 Guinea,23.77
-Dem. Rep. of the Congo,24.79
+Democratic Republic of Congo,24.79
 Lesotho,28.0274925279
 Cabo Verde,28.528
 Seychelles,28.8061521374
@@ -96,7 +96,7 @@ Paraguay,139.5
 Estonia,147.291
 United Republic of Tanzania,148.51
 Lithuania,152.43
-Lao People's Dem. Rep.,159.8
+Lao People's Democratic Republic,159.8
 Slovenia,175.47945
 State of Palestine,177.2
 Angola,180.63
@@ -120,7 +120,7 @@ Latvia,382.3640490241
 Panama,415.702
 Costa Rica,427
 Cyprus,428.8983103551
-Bolivia (Plurinational State of),429.3
+Bolivia, Plurinational State of ,429.3
 Pakistan,439.305
 Croatia,485.181633
 Ecuador,499.6533
@@ -143,14 +143,14 @@ Philippines,1520
 Israel,1616.775
 "China, Taiwan Province of",1864
 Bahrain,2048.2
-Venezuela (Bolivarian Rep. of),2183
+Venezuela,2183
 Nigeria,2190.6846595814
 Thailand,2338
 Viet Nam,2395
 India,2525
 Russian Federation,2579.321
 Ireland,2617.483
-"Korea, Republic of",2782.6
+South Korea,2782.6
 Switzerland,3078.4540578151
 Colombia,3111.6765898167
 Norway,3211.1023425496
@@ -163,7 +163,7 @@ Poland,4498.7203738734
 Chile,4814.616
 Sweden,5437.4019528897
 Australia,5629.7246959761
-Indonesia (...2002),6245
+Indonesia,6245
 Germany,6572.6456534886
 Argentina,6948.537
 Malaysia,7297
