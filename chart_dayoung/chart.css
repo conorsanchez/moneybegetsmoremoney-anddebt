@@ -11,12 +11,12 @@
 }
 #mexico-fdi .line {
   fill: none;
-  stroke: #34495E;
-  stroke-width: 2.5px;
+  stroke: #052B5B;
+  stroke-width: 3px;
 }
 #mexico-fdi .focus circle {
-  fill: #2E4053;
-  stroke: #2E4053;
+  fill: #011D42;
+  stroke: #011D42;
 }
 #mexico-fdi .overlay {
   fill: none;
@@ -33,7 +33,7 @@
 #mexico-gdp .line {
   fill: none;
   stroke: #138D75;
-  stroke-width: 2.5px;
+  stroke-width: 3px;
 }
 #mexico-gdp .focus circle {
   fill: #0B5345;
