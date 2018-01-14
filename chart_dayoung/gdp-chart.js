@@ -23,7 +23,7 @@ var yAxis = d3.svg.axis()
 
 var line = d3.svg.line()
     .x(function(d) { return x(d.date); })
-    .y(function(d) { return y(d.gdp); });
+    .y(function(d) { return y(d.close); });
 
 var svg = d3.select("#mexico-gdp-graph").append("svg")
     .attr("width", width + margin.left + margin.right)
@@ -39,7 +39,7 @@ d3.tsv("chart_dayoung/GDPdata.tsv", function(error, data) {
 
   data.forEach(function(d) {
     d.date = parseDate(d.date);
-    d.gdp = +d.gdp;
+    d.close = +d.close;
   });
 
   data.sort(function(a, b) {
@@ -47,7 +47,7 @@ d3.tsv("chart_dayoung/GDPdata.tsv", function(error, data) {
   });
 
   x.domain([data[0].date, data[data.length - 1].date]);
-  y.domain(d3.extent(data, function(d) { return d.gdp; }));
+  y.domain(d3.extent(data, function(d) { return d.close; }));
 
   svg.append("g")
       .attr("class", "x axis")
@@ -94,7 +94,7 @@ d3.tsv("chart_dayoung/GDPdata.tsv", function(error, data) {
         d0 = data[i - 1],
         d1 = data[i],
         d = x0 - d0.date > d1.date - x0 ? d1 : d0;
-    focus.attr("transform", "translate(" + x(d.date) + "," + y(d.gdp) + ")");
-    focus.select("text").text(formatCurrency(d.gdp));
+    focus.attr("transform", "translate(" + x(d.date) + "," + y(d.close) + ")");
+    focus.select("text").text(formatCurrency(d.close));
   }
 });
