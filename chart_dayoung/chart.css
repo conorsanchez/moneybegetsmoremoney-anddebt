@@ -1,94 +1,45 @@
-body {
-  font: 10px sans-serif;
-}
-
 .chart {
-  font: 15px sans-serif;
-  /*max-width: 1000px;*/
+  font: 15px georgia;
   text-align: center;
 }
 
 #mexico-fdi .axis path,
 #mexico-fdi .axis line {
   fill: none;
-  stroke: black;
+  stroke: #424949;  /*grey*/
   shape-rendering: crispEdges;
 }
-
-#mexico-fdi .x.axis path {
-  display: none;
-  strok: black;
-  width: 20px;
-}
-
 #mexico-fdi .line {
   fill: none;
-  stroke: red;
-  stroke-width: 2px;
+  stroke: #052B5B;
+  stroke-width: 3px;
 }
-
+#mexico-fdi .focus circle {
+  fill: #011D42;
+  stroke: #011D42;
+}
 #mexico-fdi .overlay {
   fill: none;
   pointer-events: all;
 }
 
-#mexico-fdi .focus circle {
-  fill: red;
-  stroke: red;
-}
 
 #mexico-gdp .axis path,
 #mexico-gdp .axis line {
   fill: none;
-  stroke: black;
+  stroke: #424949;  /*grey*/
   shape-rendering: crispEdges;
 }
-
-#mexico-gdp .x.axis path {
-  display: none;
-  strok: black;
-  width: 20px;
-}
-
 #mexico-gdp .line {
   fill: none;
-  stroke: blue;
-  stroke-width: 2px;
+  stroke: #138D75;
+  stroke-width: 3px;
 }
-
+#mexico-gdp .focus circle {
+  fill: #0B5345;
+  stroke: #0B5345;
+}
 #mexico-gdp .overlay {
   fill: none;
   pointer-events: all;
-}
-
-#mexico-gdp .focus circle {
-  fill: blue;
-  stroke: blue;
-}
-
-.axis path,
-.axis line {
-  fill: none;
-  stroke: #000;
-  shape-rendering: crispEdges;
-}
-
-.x.axis path {
-  display: none;
-}
-
-.line {
-  fill: none;
-  stroke: red;
-  stroke-width: 1.5px;
-}
-
-.overlay {
-  fill: none;
-  pointer-events: all;
-}
-
-.focus circle {
-  fill: none;
-  stroke: steelblue;
 }
