@@ -8,7 +8,7 @@ body {
   width: 800px;
   margin: 0 auto;
   background-color: white;
-  padding: 50px 100px 150px 100px;  /*T-R-B-L*/
+  padding: 50px 100px 50px 100px;  /*T-R-B-L*/
 }
 
 h1 {  /*Title of the webpage*/
@@ -65,7 +65,15 @@ li{
   letter-spacing: 0.7px;
 }
 
-
+#final_conclusion{
+  font-size: 25px;
+  text-align: center;
+  margin-left: 10px;
+  margin-right: 10px;
+  color: #515A5A; /*grey*/
+  line-height: 1.5;
+  letter-spacing: 1.2px;
+}
 /*Subsection-Conclusion Styles for Font and Box*/
 h6{   /*Reserve this for the use of sub-section conclusion*/
   font-size: 25px;

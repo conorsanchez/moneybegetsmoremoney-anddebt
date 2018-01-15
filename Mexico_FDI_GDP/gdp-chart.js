@@ -34,7 +34,7 @@ var svg = d3.select("#mexico-gdp-graph").append("svg")
   .append("g")
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-d3.tsv("chart_dayoung/GDPdata.tsv", function(error, data) {
+d3.tsv("Mexico_FDI_GDP/GDPdata.tsv", function(error, data) {
   if (error) throw error;
 
   data.forEach(function(d) {
