@@ -32,11 +32,10 @@ var svg = d3.select("#mexico-fdi-graph").append("svg")
     .attr("height", height + margin.top + margin.bottom)
     .attr("id", "mexico-fdi")
     .attr("class","chart")
-
   .append("g")
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-d3.tsv("chart_dayoung/FDIdata.tsv", function(error, data) {
+d3.tsv("Mexico_FDI_GDP/FDIdata.tsv", function(error, data) {
   if (error) throw error;
 
   data.forEach(function(d) {
@@ -101,5 +100,5 @@ d3.tsv("chart_dayoung/FDIdata.tsv", function(error, data) {
   }
 });
 
-  
+
 }, 2000)
