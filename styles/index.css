@@ -65,6 +65,18 @@ li{
   letter-spacing: 0.7px;
 }
 
+#section_conclusion{
+  font-size: 25px;
+  text-align: center;
+  margin-left: 30px;
+  margin-right: 30px;
+  color: #A6ACAF; /*#515A5A;*/
+  line-height: 1.5;
+  letter-spacing: 1.2px;
+}
+
+
+
 #final_conclusion{
   font-size: 25px;
   text-align: center;
