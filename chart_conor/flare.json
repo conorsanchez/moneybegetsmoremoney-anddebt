@@ -1,9 +1,8 @@
-
 {
- "name": "flare",
+ "name": "",
  "children": [
   {
-   "name": "analytics",
+   "name": "",
    "children": [
     {
      "name": "cluster",

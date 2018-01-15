@@ -12,7 +12,7 @@ var treemap = d3.treemap()
     .round(true)
     .paddingInner(1);
 
-d3.json("flare.json", function(error, data) {
+d3.json("flare2.json", function(error, data) {
   if (error) throw error;
 
   var root = d3.hierarchy(data)

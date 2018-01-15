@@ -1,0 +1,104 @@
+html {
+  font-size: 15px;
+  background-color: black;
+  font-family: georgia;
+}
+
+body {
+  width: 800px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 50px 100px 150px 100px;  /*T-R-B-L*/
+}
+
+h1 {  /*Title of the webpage*/
+  font-size: 60px;
+  text-align: center; 
+  color: black;
+}
+
+h2{   /*Purpose of the webpage*/
+  font-size: 30px;
+  text-align: center;
+  color: #515A5A; /*grey*/
+  line-height: 1.5;
+  letter-spacing: 1.2px;
+}
+
+h3{   /*Opening question for subsection*/
+  font-size: 35px;
+  text-align: center;
+  margin-left: 10px;
+  color: #A6ACAF;  
+  line-height: 1.5;
+  letter-spacing: 0.8px;
+}
+
+h4{   /*Question number for subsection*/
+  font-size: 80px;
+  color: #E5E7E9;  /*light grey*/
+  text-align: left;
+  line-height: 1.5px;
+  letter-spacing: 1px;
+}
+
+h5{   /*Title for the chart*/
+  font-size: 25px;
+  text-align: center;
+  color: #515A5A; /*grey*/
+  line-height: 1.5;
+  letter-spacing: 1.2px;
+}
+
+p{
+  font-size: 20px;
+  color: black;  
+  line-height: 1.3;
+  letter-spacing: 0.7px;
+}
+
+li{
+  font-size: 20px;
+  color: black;
+  margin-left: 10px;  
+  line-height: 1.3;
+  letter-spacing: 0.7px;
+}
+
+
+/*Subsection-Conclusion Styles for Font and Box*/
+h6{   /*Reserve this for the use of sub-section conclusion*/
+  font-size: 25px;
+  color: #515A5A;
+  text-align: center;
+  line-height: 1px;
+  letter-spacing: 1px;
+}
+
+.box_c {   /*Box for conclusions for sub-sections*/
+  border: 1px solid #F2F4F4; /*#616A6B*/
+  background-color: #F2F4F4;
+}
+
+/*Image Styles*/
+img {
+  display: block;
+  margin: 0 auto;
+  max-width: 750px;
+}
+
+.box_img {
+  border: 1px solid #E5E7E9;
+}
+
+.blankline_small{
+  font-size: 5px;
+}
+
+.blankline_medium{
+  font-size: 20px;
+}
+
+.blankline_large{
+  font-size: 50px;
+}

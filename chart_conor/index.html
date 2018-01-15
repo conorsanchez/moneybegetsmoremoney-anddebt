@@ -4,15 +4,24 @@
 <html>
 <head>
 	<title>Mexico FDI By Industry</title>
+	<link href="style.css" rel="stylesheet" type="text/css">
 	<link href="styles.css" rel="stylesheet" type="text/css">
+
 </head>
 <body>
-	<svg width="600" height="400"></svg>
-	<form>
-	<label><input type="radio" name="mode" value="sumBySize" checked> 2012</label>
-	</form>
+	<h1>Mexico's FDI Broken Down by Sector</h1>
+	<hr style="color: #515A5A;"></hr>	
+	<h2>Where it went in 2012</h2>
+	<hr style="color: #515A5A;"></hr>
+	<div class="blankline_large"><br></br></div>
+
+	<svg width="800" height="400"></svg>
+	<p>2012</p></label>
 	<script src="https://d3js.org/d3.v4.min.js"></script>
 	<script src="treebranch.js"></script>
+	
+	<div class="blankline_large"><br></br></div>
+
 <script>
 	function sumByCount(d) {
   return d.children ? 0 : 1;

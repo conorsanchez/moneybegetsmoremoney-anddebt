@@ -1,9 +1,8 @@
-
 {
- "name": "flare",
+ "name": "",
  "children": [
   {
-   "name": "analytics",
+   "name": "",
    "children": [
     {
      "name": "cluster",
@@ -14,13 +13,13 @@
     {
      "name": "graph",
      "children": [
-      {"name": "Agriculture & Fishing", "size": 33.7}
+      {"name": "Agriculture & Fishing", "size": 71.9}
      ]
     },
     {
      "name": "optimization",
      "children": [
-      {"name": "Hotel & Restaurants", "size": 713.4}
+      {"name": "Hotel & Restaurants", "size": 1129.6}
      ]
     }
    ]
@@ -28,15 +27,15 @@
   {
    "name": "animate",
    "children": [
-    {"name": "Mining & Quarrying", "size": 832.6},
-    {"name": "Manufacturing", "size": 9784.3},
+    {"name": "Mining & Quarrying", "size": 2689.9},
+    {"name": "Manufacturing", "size": 7328.2},
     {
      "name": "interpolate",
      "children": [
       {"name": "Transport, Storage, & Communications", "size": 766.8}
      ]
     },
-    {"name": "Construction", "size": 2103.1}
+    {"name": "Construction", "size": 1783.6}
    ]
   },
   {
@@ -48,19 +47,19 @@
       {"name": "Trade & Repairs", "size": 3043.8}
      ]
     },
-    {"name": "Financial Services", "size": 2663.9}
+    {"name": "Electricity & Gas", "size": 247.9}
    ]
   },
   {
    "name": "display",
    "children": [
-    {"name": "Total Services", "size": 9651.6}
+    {"name": "Total Services", "size": 3360.7}
    ]
   },
   {
    "name": "flex",
    "children": [
-    {"name": "Other", "size": 2180.4}
+    {"name": "Other", "size": 981.2}
    ]
   }
  ]
