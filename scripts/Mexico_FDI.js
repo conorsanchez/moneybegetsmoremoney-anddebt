@@ -1,3 +1,5 @@
+setTimeout(function(){
+
 var margin = {top: 20, right: 100, bottom: 30, left: 100},
     width = 800 - margin.left - margin.right,
     height = 500 - margin.top - margin.bottom;
@@ -25,16 +27,15 @@ var line = d3.svg.line()
     .x(function(d) { return x(d.date); })
     .y(function(d) { return y(d.close); });
 
-var svg = d3.select("#mexico-gdp-graph").append("svg")
+var svg = d3.select("#mexico-fdi-graph").append("svg")
     .attr("width", width + margin.left + margin.right)
     .attr("height", height + margin.top + margin.bottom)
-    .attr("id", "mexico-gdp")
+    .attr("id", "mexico-fdi")
     .attr("class","chart")
-
   .append("g")
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-d3.tsv("Mexico_FDI_GDP/GDPdata.tsv", function(error, data) {
+d3.tsv("RawData/Mexico_FDI.tsv", function(error, data) {
   if (error) throw error;
 
   data.forEach(function(d) {
@@ -62,7 +63,7 @@ d3.tsv("Mexico_FDI_GDP/GDPdata.tsv", function(error, data) {
       .attr("y", 6)
       .attr("dy", ".71em")
       .style("text-anchor", "end")
-      .text("GDP (USD, Billions)");
+      .text("FDI (USD, Billions)");
 
   svg.append("path")
       .datum(data)
@@ -98,3 +99,6 @@ d3.tsv("Mexico_FDI_GDP/GDPdata.tsv", function(error, data) {
     focus.select("text").text(formatCurrency(d.close));
   }
 });
+
+
+}, 2000)

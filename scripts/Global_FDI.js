@@ -1,4 +1,4 @@
-d3.csv("data_dawei/fdi_2016.csv", function(err, data) {
+d3.csv("RawData/Global_FDI_2016.csv", function(err, data) {
 
   var config = {"data0":"ECONOMY","data1":"FDI Inflow",
               "label0":"label 0","label1":"label 1","color0":"#99ccff","color1":"#0050A1",
