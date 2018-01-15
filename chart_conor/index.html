@@ -3,15 +3,39 @@
 
 <html>
 <head>
+	<title>Mexico's FDI Broken Down by Sector</title>
 	<link href="style.css" rel="stylesheet" type="text/css">
-	<link href="styles..css" rel="stylesheet" type="text/css">
-
+	<link href="styles.css" rel="stylesheet" type="text/css">
+	<link href="style.css" rel="stylesheet" type="text/css">
+	<link href="styles.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 
-	<svg width="1200" height="1200"></svg>
+	<h5>Mexico's FDI Broken Down by Sector (2012)</h5>
+
+	<svg width="800" height="500"></svg>
 	<script src="https://d3js.org/d3.v4.min.js"></script>
-	<script src="treebranch.js"></script>
+	<script src="flare.js"></script>
+
+<p> The above graphic provides a snapshot of what sectors received the most FDI in Mexico in 2012. There are a couple observations to be gleaned from this graphic: </p>
+		<ul>
+			<li>The notable absence of investments in energy due to the fact that energy markets were closed to foreign investors. In 2013, they opened up, however, detailed data for that year has not yet been made available.</li>
+			<li>While manufacturing has served as the largest sector receiving FDI, other sectors are growing.</li>
+				<div class="blankline_small"><br></br></div>
+			<li>By pursuing privitization reforms, Mexico expanded which sectors received FDI inflows.</li>
+		</ul>
+	<div class="box_c"><h6><em>As FDI grew in Mexico, so did</em></h6>
+					   <h6><em>the variety of sectors that received investment.</em></h6></div>
+
+<script>
+	function sumByCount(d) {
+  return d.children ? 0 : 1;
+}
+
+function sumBySize(d) {
+  return d.size;
+}
+</script>
 
 <script>
 	function sumByCount(d) {
