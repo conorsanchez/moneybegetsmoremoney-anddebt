@@ -3,7 +3,8 @@ Group project website HKS
 
 Dataset
 1-1. World FDI Inflows in 2016:
-Waiting for Dawei's input
+World Map of  FDI, the data comes from UNCTAD statistics, and the economies with negative inflows or no available data have been taken out.
+[Waiting for more input from Dawei]
 
 
 
@@ -47,4 +48,4 @@ Waiting for Dawei's input
 
 
 3-1. Mexico's FDI by Sector in 2012
-Waiting for Conor's input
+[Waiting for input from Conor]
