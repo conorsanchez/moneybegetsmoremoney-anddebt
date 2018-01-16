@@ -1,5 +1,5 @@
-setTimeout(function(){
-
+setTimeout(function(){  /* <-- This delays the loading time by 2 seconds*/
+/*Adjusting Size of the Graph*/
 var margin = {top: 20, right: 100, bottom: 30, left: 100},
     width = 800 - margin.left - margin.right,
     height = 500 - margin.top - margin.bottom;
@@ -27,15 +27,15 @@ var line = d3.svg.line()
     .x(function(d) { return x(d.date); })
     .y(function(d) { return y(d.close); });
 
-var svg = d3.select("#mexico-fdi-graph").append("svg")
+var svg = d3.select("#mexico-fdi-graph").append("svg")   /*Assigns name to the chart that index.html can refer to*/
     .attr("width", width + margin.left + margin.right)
     .attr("height", height + margin.top + margin.bottom)
-    .attr("id", "mexico-fdi")
+    .attr("id", "mexico-fdi")  /*Assigns id to the chart that styles file will later use*/
     .attr("class","chart")
   .append("g")
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-d3.tsv("RawData/Mexico_FDI.tsv", function(error, data) {
+d3.tsv("RawData/Mexico_FDI.tsv", function(error, data) {  /*Reading from the raw data*/
   if (error) throw error;
 
   data.forEach(function(d) {
@@ -63,7 +63,7 @@ d3.tsv("RawData/Mexico_FDI.tsv", function(error, data) {
       .attr("y", 6)
       .attr("dy", ".71em")
       .style("text-anchor", "end")
-      .text("FDI (USD, Billions)");
+      .text("FDI (USD, Billions)");   /*Labeling Y-axix*/
 
   svg.append("path")
       .datum(data)
