@@ -1,14 +1,14 @@
 {
  "name": "",
  "children": [
-  {
+  {/*Follow the pattern below.*/
    "name": "",
    "children": [
     {
      "name": "cluster",
      "children": [
       {"name": "Real Estate", "size": 675.4}
-     ]
+     ]/*Careful about deleting these.*/
     },
     {
      "name": "graph",

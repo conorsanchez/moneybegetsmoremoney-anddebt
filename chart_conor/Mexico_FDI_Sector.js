@@ -11,7 +11,7 @@ var treemap = d3.treemap()
     .size([width, height])
     .round(true)
     .paddingInner(1);
-
+/*Below is where you insert the jason file, which has all the data*/
 d3.json("flare.json", function(error, data) {
   if (error) throw error;
 
