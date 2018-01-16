@@ -48,4 +48,12 @@ World Map of  FDI, the data comes from UNCTAD statistics, and the economies with
 
 
 3-1. Mexico's FDI by Sector in 2012
-[Waiting for input from Conor]
+3-1  (1) Go to stats.OECD.org.
+3-1  (2) On the left hand column, select "Gobalization", then select "FDI  
+         statistics according to Benchmark Definition 3rd Edition (BMD3)", and then select "FDI flows by industry".
+3-1  (3) A data sheet will appear to the right; from the menu on top, choose 
+         "Customize", then "selection", then "reporting country."
+3-1  (4) A pop up window will appear. Uncheck all of the countries except 
+         Mexico, then select "Industry" from top menu. Unselect all items except for those that are in caps. Finally, select "View Data" on the bottom right hand corner of pop up window. Export the file into a Excel sheet to retain personal file.
+3-1  (5) Replace data from the JSON file provided on the d3 website with the 
+         data found in excel file for the year 2012 only.
